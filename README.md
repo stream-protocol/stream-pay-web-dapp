@@ -46,7 +46,7 @@ npm run dev
 
 Live deployment is made via Github / Vercel integration, as a vercel.app, from master branch.
 
-Open [stream-pay-web-dapp](https://stream-pay-web-alpha.vercel.app/)
+Open [stream-pay-web-dapp](https://stream-pay-web-dapp.vercel.app/)
 
 
 #### 
