@@ -138,7 +138,7 @@ export const setEtherscanAddress = (
   }
 };
 
-export const baseUrl: string = "https://woop-pay-alpha.vercel.app/woop/";
+export const baseUrl: string = "https://stream-pay-alpha.vercel.app/stream/";
 
 export const networks: any = [
   "goerli",
@@ -150,6 +150,7 @@ export const networks: any = [
 export const tokens: any = [
   "ETH",
   "MATIC",
+  "STRM",
   "WETH",
   "WBTC",
   "DAI",
@@ -175,6 +176,7 @@ export const selectTokenDecimals = (token: any): number | undefined => {
   const tokens: string[] | undefined = [
     "ETH",
     "MATIC",
+    "STRM",
     "WETH",
     "WBTC",
     "DAI",

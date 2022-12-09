@@ -28,7 +28,7 @@ import ERC20 from "../../abi/ERC20.abi.json";
 import Footer from "../../components/Footer";
 import { utils } from "ethers";
 import Header from "../../components/Heading";
-import styles from "./woop.module.scss";
+import styles from "./stream-pay.module.scss";
 import cx from "classnames";
 import Link from "next/link";
 import ErrorsUi from "../../components/ErrorsUi/ErrorsUi";
@@ -196,10 +196,10 @@ const Request = () => {
   return (
     <div>
       <Head>
-        <title>woop-pay</title>
+        <title>StreamPay</title>
         <meta
           name="description"
-          content="woop-pay makes web3 payment requests easy"
+          content="StreamPay Makes Web3 Payment Requests Simple"
         />
         <link rel="icon" href="../icon.svg" />
       </Head>
@@ -253,14 +253,14 @@ const Request = () => {
               >
                 <p className="font-base font-bold text-xl">
                   {badRequest
-                    ? "No Woop to pay here"
+                    ? "No Stream to pay here"
                     : isNativeTx
                     ? isSuccessNative
                       ? "Woop sent!"
-                      : "You've received a Woop! "
+                      : "You've received a payment! "
                     : isSuccess
-                    ? "Woop sent!"
-                    : "You've received a Woop! "}
+                    ? "Sent!"
+                    : "You've received a currency! "}
                 </p>
                 <p className="text-3xl ml-2">
                   {badRequest
@@ -458,7 +458,7 @@ const Request = () => {
                           </svg>
                         </>
                       ) : (
-                        "Pay Woop"
+                        "Pay Stream"
                       )}
                     </button>
                   </div>

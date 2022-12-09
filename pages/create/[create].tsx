@@ -229,10 +229,10 @@ const Request = () => {
   return (
     <div>
       <Head>
-        <title>woop-pay</title>
+        <title>StreamPay</title>
         <meta
           name="description"
-          content="woop-pay makes web3 payment requests easy"
+          content="StreamPay Makes Web3 Payment Requests Simple"
         />
         <link rel="icon" href="../icon.svg" />
       </Head>
@@ -286,14 +286,14 @@ const Request = () => {
               >
                 <p className="font-base font-bold text-xl">
                   {badRequest
-                    ? "No Woop to pay here"
+                    ? "No way to pay here"
                     : isNativeTx
                     ? isSuccessNative
-                      ? "Woop sent!"
-                      : "You've received a Woop! "
+                      ? "Sent!"
+                      : "You've received a payment! "
                     : isSuccess
-                    ? "Woop sent!"
-                    : "You've received a Woop! "}
+                    ? "Sent!"
+                    : "You've received a Payment! "}
                 </p>
                 <p className="text-3xl ml-2">
                   {badRequest
