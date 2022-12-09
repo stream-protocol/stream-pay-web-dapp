@@ -1,0 +1,17 @@
+.baseContainer {
+    background: linear-gradient( 0.6turn, rgba(0, 17, 44, 1), rgb(5, 17, 80, 1));
+}
+
+.containerBase {
+    background-repeat: repeat;
+    background-image: url("/double-bubble-dark.webp");
+    opacity: 0.2;
+    background-blend-mode: hard-light;
+    background-size: 350px;
+}
+
+.containerBox {
+    background: linear-gradient( 0.6turn, rgba(87, 123, 223, 1), rgba(58, 102, 227, 1));
+    border: 1px solid rgba(0, 17, 44, 0.5);
+    width: 100%;
+}
