@@ -196,7 +196,7 @@ const Request = () => {
   return (
     <div>
       <Head>
-        <title>StreamPay</title>
+        <title>StreamPay - Alpha</title>
         <meta
           name="description"
           content="StreamPay Makes Web3 Payment Requests Simple"
