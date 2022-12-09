@@ -1,31 +1,21 @@
 .containerBox {
-    background: linear-gradient(
-      0.6turn,
-      rgba(79, 76, 227, 1),
-      rgba(16, 130, 178, 1)
-
-    );
+    background: linear-gradient( 0.6turn, rgba(79, 76, 227, 1), rgba(16, 130, 178, 1));
     border: 1px solid rgba(33, 35, 167, 0.5);
     width: 100%;
-  }
+}
 
-  .baseContainer {
-    background: linear-gradient(
-      0.6turn,
-      rgba(38, 142, 200, 1)
-,
-      rgb(6, 34, 92)
-    );
-  }
+.baseContainer {
+    background: linear-gradient( 0.6turn, rgba(38, 142, 200, 1), rgb(6, 34, 92));
+}
 
-  .containerBase {
+.containerBase {
     background-repeat: repeat;
-    background-image: url("/double-bubble-dark.webp");
+    background-image: url("/stream-banner.webp");
     opacity: 0.2;
     background-blend-mode: hard-light;
     background-size: 350px;
-  }
+}
 
-  .topContainer {
+.topContainer {
     border-bottom: 1px solid rgba(33, 35, 167, 0.5);
-  }
+}

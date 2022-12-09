@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../public/logo.svg";
+import logo from "../public/logo.png";
 import Wallet from "./Wallet";
 import styles from "./Wallet.module.scss";
 import cx from "classnames";
