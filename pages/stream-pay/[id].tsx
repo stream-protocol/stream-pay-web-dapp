@@ -48,8 +48,8 @@ const Request = () => {
   const [recipient, setRecipient] = React.useState<string>("");
   const [network, setNetwork] = React.useState<string>("");
   const [networkName, setNetworkName] = React.useState<string>("");
-  const [woopBadRequest, setWoopBadRequest] = React.useState<string>("");
-  const [woopBadNetwork, setWoopBadNetwork] = React.useState<string>("");
+  const [streamBadRequest, setStreamBadRequest] = React.useState<string>("");
+  const [streamBadNetwork, setStreamBadNetwork] = React.useState<string>("");
   const [badRequest, setBadRequest] = React.useState<boolean>(false);
   const [wrongNetwork, setWrongNetwork] = React.useState<boolean>(false);
   const [isNativeTx, setIsNativeTx] = React.useState<boolean>(false);
@@ -127,20 +127,20 @@ const Request = () => {
   // react use effects
   React.useEffect(() => {
     if (!isConnected) {
-      setWoopBadRequest("");
-      setWoopBadNetwork("");
+      setStreamBadRequest("");
+      setStreamBadNetwork("");
     } else {
       if (isNativeTx) {
         if (!sendTransaction && !badRequest) {
-          setWoopBadRequest("Payment not possible due to insufficient funds");
+          setStreamBadRequest("Payment not possible due to insufficient funds");
         } else {
-          setWoopBadRequest("");
+          setStreamBadRequest("");
         }
       } else {
         if (!write && !badRequest) {
-          setWoopBadRequest("Payment not possible due to insufficient funds");
+          setStreamBadRequest("Payment not possible due to insufficient funds");
         } else {
-          setWoopBadRequest("");
+          setStreamBadRequest("");
         }
       }
     }
@@ -155,10 +155,10 @@ const Request = () => {
   React.useEffect(() => {
     if (network) {
       setWrongNetwork(false);
-      setWoopBadNetwork("");
+      setStreamBadNetwork("");
       if (network != chain?.network) {
         setWrongNetwork(true);
-        setWoopBadNetwork(`Wrong network. Please connect to ${networkName}`);
+        setStreamBadNetwork(`Wrong network. Please connect to ${networkName}`);
       }
     }
   }, [chain, id]);
@@ -238,7 +238,7 @@ const Request = () => {
         {/* CONTENT */}
         <Container maxWidth="xs" className="z-10">
           <div className={"mb-2"}>
-            <ErrorsUi errorMsg={woopBadRequest} errorNtk={woopBadNetwork} />
+            <ErrorsUi errorMsg={streamBadRequest} errorNtk={streamBadNetwork} />
           </div>
           <Box
             component="form"
@@ -256,7 +256,7 @@ const Request = () => {
                     ? "No Stream to pay here"
                     : isNativeTx
                     ? isSuccessNative
-                      ? "Woop sent!"
+                      ? "Sent!"
                       : "You've received a payment! "
                     : isSuccess
                     ? "Sent!"
@@ -437,7 +437,7 @@ const Request = () => {
                             />
                           </svg>
                         ) : (
-                          "Pay Woop"
+                          "Pay Stream"
                         )
                       ) : isLoading ? (
                         <>

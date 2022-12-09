@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   const STREAM_PAY = "stream_pay_eth";
-  const STREAM_PROTOCOL_LINK = `https://twitter.com/${stream_protocol}`;
+  const STREAM_PROTOCOL_LINK = `https://twitter.com/@stream_protocol/`;
   const STREAM_PAY_LINK = "https://web3.streampayment.app/";
   return (
     <footer className="flex justify-center md:justify-between p-5 font-base text-sm opacity-70">

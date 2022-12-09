@@ -226,7 +226,7 @@ export default function Payment(props: any) {
               </svg>
             </>
           ) : isConnected ? (
-            "Create a Woop"
+            "Create a Stream"
           ) : (
             "Connect Wallet"
           )}
