@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/https://imgur.com/XOiFt7Y" width="1000" height="300"/>
+  <img src="(https://imgur.com/XOiFt7Y)" width="1000" height="300"/>
 
 # Stream Pay Web3 App - Alpha
 
