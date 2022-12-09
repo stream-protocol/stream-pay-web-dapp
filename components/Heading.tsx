@@ -23,8 +23,8 @@ const Header: React.FC<IHeaderProps> = (props) => {
           <Image
             alt="stream-pay"
             src={logo}
-            width={200}
-            height={60}
+            width={190}
+            height={50}
             className={cx(styles.image)}
           />
           <p
