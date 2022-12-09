@@ -49,7 +49,7 @@ Live deployment is made via Github / Vercel integration, as a vercel.app, from m
 
 ### Web Application
 
-dApp demo [stream-pay-web-dapp](https://stream-pay-web-dapp.vercel.app/)
+Dapp demo: [stream-pay-web-dapp](https://stream-pay-web-dapp.vercel.app/)
 
 
 #### 
